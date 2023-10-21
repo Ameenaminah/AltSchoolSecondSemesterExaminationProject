@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+
+  text-decoration: none;
+  /* border: none;
+  outline: none; */
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5em 5% 2em;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+span {
+  color: var(--main-color);
+}
+
+.blog {
+  color: #0ef;
+  font-size: 4rem;
+  padding: 3em;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 2em;
+  background: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  transition: 0.5s ease;
+  border-radius: 4em;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 5% 2rem;
+  }
+  .footer {
+    padding: 1em 3.5em;
+  }
+  .footer-text p {
+    font-size: 1.2rem;
+  }
+  .contact {
+    min-height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: initial;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+  }
+  .navbar.active {
+    left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-content h2 {
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+
+  .food-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 617px) {
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
+}
+@media (max-width: 365px) {
+  html {
+    font-size: 40%;
+  }
+  .hero-content {
+    max-width: 90%;
+  }
+  .about-img img {
+    width: 90vw;
+  }
+
+  .social-media a {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+header .login-icon {
+  height: 18px;
+  width: 18px;
+}
+
+header .login-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0.75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* 
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 27px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-form > input {
+  border: 1px solid rgba(209, 213, 219);
+  height: 40px;
+  text-indent: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+}
+
+.login-form > input:focus {
+  outline: none;
+}
+
+.login-form > input:first-of-type {
+  border-radius: 6px 6px 0px 0px;
+}
+
+.login-form > input:last-of-type {
+  border-radius: 0px 0px 6px 6px;
+  border-top: none;
+} */
+
+/* .login-form > button {
+  background-color: #ff8c38;
+  border: none;
+  border-radius: 6px;
+  height: 55px;
+  margin-top: 22px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.red {
+  color: #cc0000;
+} */

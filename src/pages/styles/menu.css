@@ -1,0 +1,16 @@
+.host-nav {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.host-nav a {
+  font-size: 2rem;
+  color: #fff7ed;
+  font-weight: 500;
+  padding: 2em 20px;
+}
+
+.host-nav a:hover {
+  color: #0ef;
+  font-weight: 600;
+}

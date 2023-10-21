@@ -1,0 +1,102 @@
+.food-list-container {
+  margin-top: 10rem;
+  color: #161616;
+}
+
+.foods-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ff8c38;
+}
+
+.foods-list-filter-buttons > a {
+  margin-right: 15px;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  margin: 4rem 0;
+}
+.container a {
+  color: #fff7ed;
+  text-decoration: none;
+}
+h1 {
+  color: #fff7ed;
+  font-size: 3rem;
+}
+.img {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+}
+.food-info {
+  font-size: 1.8rem;
+}
+.food-info h3 {
+  margin-top: 0.5em;
+}
+.food-info p {
+  margin: 0.6em 0;
+}
+
+.food-list-container button {
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.food-category {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffead0;
+  color: black;
+}
+
+.food-category:hover {
+  color: #ffead0;
+}
+
+.food-category:focus {
+  outline: none;
+}
+
+.food-category.selected {
+  color: #ffead0;
+}
+
+.food-category.Burger:hover,
+.food-category.Burger.selected {
+  background-color: #e17654;
+}
+
+.food-category.Rice:hover,
+.food-category.Rice.selected {
+  background-color: #115e59;
+}
+
+.food-category.Ice-Cream:hover,
+.food-category.Ice-Cream.selected {
+  background-color: #da9644;
+}
+
+.food-category.clear-filters {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #ed7e7e;
+}
+
+i[class*="food-category-"] {
+  padding: 7px 14px;
+}
