@@ -6,13 +6,13 @@ const projects = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
     price: 20,
-    image: "../public/images/jollof.jpg",
+    image: "../images/jollof.jpg",
     name: "Jollof Rice",
   },
 
   {
     id: 2,
-    image: "../public/images/cheese.jpg",
+    image: "../images/cheese.jpg",
     category: "Burger",
     name: "Cheeseburger",
     "description ":
@@ -22,7 +22,7 @@ const projects = [
 
   {
     id: 3,
-    image: "../public/images/vanilla.jpg",
+    image: "../images/vanilla.jpg",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
     price: 8,
@@ -33,7 +33,7 @@ const projects = [
   {
     category: "Rice",
     id: 4,
-    image: "../public/images/chinese.jpg",
+    image: "../images/chinese.jpg",
     name: "Chinese Rice",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
@@ -42,12 +42,12 @@ const projects = [
 
   {
     name: "Beef burgers",
-    "category ": "Burger",
+    category: "Burger",
     price: 12,
-    "description ":
+    description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
     id: 5,
-    image: "../public/images/beef.jpg",
+    image: "../images/beef.jpg",
   },
 
   {
@@ -57,14 +57,14 @@ const projects = [
     name: "Veggie burger",
     price: 15,
     id: 6,
-    image: "../public/images/veggie.jpg",
+    image: "../images/veggie.jpg",
   },
   {
     category: "Ice-Cream",
     price: 12,
     name: "Strawberry Ice Cream",
     id: 7,
-    image: "../public/images/strawbeerry.jpg",
+    image: "../images/strawbeerry.jpg",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
   },
@@ -75,7 +75,7 @@ const projects = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
     id: 8,
-    image: "../public/images/fried.jpg",
+    image: "../images/fried.jpg",
     name: "Fried Rice",
   },
 
@@ -85,7 +85,7 @@ const projects = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicin…hil ex in voluptate! Asperiores ut ipsam sint ea.",
     id: 9,
-    image: "../public/images/chocolate.jpg",
+    image: "../images/chocolate.jpg",
     category: "Ice-Cream",
   },
 ];
