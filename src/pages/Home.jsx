@@ -12,7 +12,7 @@ export const Home = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
             labore, sint cupiditate distinctio tempora reiciendis.
           </p>
-          <Link className="btn">get yours now</Link>
+          <Link className="btn">Get yours now</Link>
         </div>
       </section>
     </>

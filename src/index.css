@@ -62,6 +62,7 @@ span {
   transition: 0.5s ease;
   border-radius: 4em;
   cursor: pointer;
+  text-align: center;
 }
 .btn:hover {
   box-shadow: none;

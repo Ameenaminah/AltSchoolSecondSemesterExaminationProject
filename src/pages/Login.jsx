@@ -1,13 +1,12 @@
-import { useState } from "react";
-// import { useLoaderData, useNavigate, redirect } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import "./styles/login.css";
 import { useAuth } from "../utils/useAuth";
-
-// export function loader({ request }) {
-//   return new URL(request.url).searchParams.get("message");
-// }
 
 export function Login() {
   const { user, login, logout } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const [username, setUsername] = useState("");
   const [error, setError] = useState("");
@@ -27,15 +26,26 @@ export function Login() {
     logout();
   };
 
+  useEffect(() => {
+    if (location.state && location.state.fromMenu) {
+      navigate("/menu");
+    }
+  }, [location.state]);
+
   return (
     <section className="login-container">
       {user ? (
-        <div>
+        <div className="content">
           <h1>Welcome, {user.username}!</h1>
-          <button onClick={handleLogout}>Log Out</button>
+          <button onClick={handleLogout} className="btn">
+            Log Out
+          </button>
         </div>
       ) : (
-        <div>
+        <div className="content">
+          {location.state && location.state.message && (
+            <h2>{location.state.message}</h2>
+          )}
           <h1>Please Login to your account</h1>
           <input
             type="text"
@@ -43,7 +53,9 @@ export function Login() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <button onClick={handleLogin}>Log In</button>
+          <button onClick={handleLogin} className="btn">
+            Log In
+          </button>
           {error && <p>{error}</p>}
         </div>
       )}

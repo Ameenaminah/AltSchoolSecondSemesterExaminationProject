@@ -4,7 +4,7 @@ export function Error() {
   const error = useRouteError();
 
   return (
-    <div className="container">
+    <section className="container">
       <h2>Page not Found</h2>
       <h4>Hmm, the page you were looking for doesn’t seem to exist anymore.</h4>
       <pre>
@@ -13,6 +13,6 @@ export function Error() {
       <Link to="/" className="error-btn btn">
         Home Page
       </Link>
-    </div>
+    </section>
   );
 }

@@ -1,5 +1,3 @@
-// import HeroImg from "../assets/images/mypix.jpg";
-// import "../pages/About.css";
 import "./styles/about.css";
 export const About = () => {
   return (

@@ -1,4 +1,3 @@
-// src/useAuth.js
 import { useState, useEffect } from "react";
 
 export function useAuth() {
